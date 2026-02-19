@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Editor + Preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Markdown Editor</h1>
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <div class="toolbar">
+        <button data-syntax="# " title="Heading">H</button>
+        <button data-syntax="**" title="Bold"><strong>B</strong></button>
+        <button data-syntax="*" title="Italic"><em>I</em></button>
+        <button data-syntax="- " title="List">≡</button>
+        <button data-syntax="`" title="Code">&lt;/&gt;</button>
+        <button data-syntax="[]()" title="Link">🔗</button>
+        <button data-syntax="> " title="Quote">"</button>
+    </div>
+
+    <main class="container">
+        <section class="editor-panel">
+            <textarea id="editor" placeholder="# Start writing Markdown here..."></textarea>
+        </section>
+        <section class="preview-panel">
+            <div id="preview"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
